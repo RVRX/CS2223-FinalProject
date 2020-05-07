@@ -215,4 +215,20 @@ class Tests {
         //run tests
         runTestsMultipleResultsExpected(searchFor, fullText, expected, testArrayList, alphaSize);
     }
+
+    @Test
+    void highlight_notInTextTest() {
+        assertEquals(simpleLoremIpsum,Horspool.highlight("foo",simpleLoremIpsum));
+    }
+
+    @Test
+    void highlight_SingleOccurrence() {
+        assertEquals("Lorem ipsum dolor sit AMET, consectetur adipiscing elit.",Horspool.highlight("amet,",simpleLoremIpsum)); //fixme
+    }
+
+    @Test
+    void highlight_ManyOccurrences() throws FileNotFoundException {
+        String ElephantModified = Main.fileHandlerToString("ElephantsChildCapitalizedElephant.txt",StandardCharsets.ISO_8859_1);
+        assertEquals(ElephantModified,Horspool.highlight("Elephant",ElephantsChildTXT));
+    }
 }
