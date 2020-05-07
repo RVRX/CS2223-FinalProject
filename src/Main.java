@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println("CS 2223 - Final Project D-Term 2020\nGROUP MEMBERS: Cole Manning, Mason Powell, Liam McDonald, Sam Kwok, Sam Rowe\n------------");
 
-        System.out.println("Example Implementation: (NOTE: some of these take a long time to search expecially if the word is not in the text, or is towards the end)\n");
+        System.out.println("Example Implementation: (NOTE: some of these take a long time to search especially if the word is not in the text, or is towards the end)\n");
         System.out.println("What text would you like to search through?\n1. The Elephant's Child, 2. Moby Dick. Enter corresponding number...");
         String file;
         Scanner keyboard = new Scanner(System.in);
