@@ -14,7 +14,7 @@ public class Horspool {
     }
 
     public static int[] preprocess(String pattern, String fullStr) {
-        int[] T = new int[getAlphaSize(fullStr)+1];
+        int[] T = new int[Math.max(getAlphaSize(pattern)+1,getAlphaSize(fullStr)+1)];
         for (int i = 0; i < T.length; i++) {
             T[i] = pattern.length();
         }
