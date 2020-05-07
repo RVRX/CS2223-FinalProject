@@ -83,13 +83,12 @@ public class Horspool {
 
     public static String highlight(String subStr, String str) {
         ArrayList<Integer> locations = searchAll(subStr, str);
-        String highlighted = str.toLowerCase();
 
         for (int n : locations) {
-            highlighted = highlighted.substring(0, n) + subStr.toUpperCase() + highlighted.substring(n + subStr.length(), str.length() - 1);
+            str = str.substring(0, n) + subStr.toUpperCase() + str.substring(n + subStr.length());
         }
 
-        return highlighted;
+        return str;
     }
 
 }
