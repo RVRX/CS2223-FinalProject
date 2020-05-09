@@ -19,7 +19,7 @@ class Tests {
 
     /**
      * If ONE result is expected from search, runs test on all functions
-     * @param searchFor the string ot search for
+     * @param searchFor the string to search for
      * @param fullText the full text to search through
      * @param expected first expected result
      * @param alphaSize largest integer representation of alphabet of input text and text to search.
@@ -35,7 +35,7 @@ class Tests {
 
     /**
      * If MULTIPLE results expected from search, runs tests on all functions
-     * @param searchFor the string ot search for
+     * @param searchFor the string to search for
      * @param fullText the full text to search through
      * @param expected first expected result
      * @param arrayList Array of expected results
@@ -50,7 +50,7 @@ class Tests {
 
     /**
      * If NO result is expected from search, runs test on all functions
-     * @param searchFor the string ot search for
+     * @param searchFor the string to search for
      * @param fullText the full text to search through
      * @param alphaSize largest integer representation of alphabet of input text and text to search.
      */
