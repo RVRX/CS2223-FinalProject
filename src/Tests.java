@@ -223,7 +223,7 @@ class Tests {
 
     @Test
     void highlight_SingleOccurrence() {
-        assertEquals("Lorem ipsum dolor sit AMET, consectetur adipiscing elit.",Horspool.highlight("amet,",simpleLoremIpsum)); //fixme
+        assertEquals("Lorem ipsum dolor sit AMET, consectetur adipiscing elit.",Horspool.highlight("amet,",simpleLoremIpsum));
     }
 
     @Test
